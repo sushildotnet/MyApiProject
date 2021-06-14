@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.809.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KolmeoApi", "KolmeoApi\KolmeoApi.csproj", "{F4FD4313-A26E-4793-B916-2CE09ED614F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KolmeoBL", "KolmeoBL\KolmeoBL.csproj", "{83E77019-F072-4D54-B8D6-D7A06E6FB038}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KolmeoDL", "KolmeoDL\KolmeoDL.csproj", "{777DBBEA-8200-47ED-8C9A-288678AAC14A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4FD4313-A26E-4793-B916-2CE09ED614F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4FD4313-A26E-4793-B916-2CE09ED614F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4FD4313-A26E-4793-B916-2CE09ED614F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4FD4313-A26E-4793-B916-2CE09ED614F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83E77019-F072-4D54-B8D6-D7A06E6FB038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E77019-F072-4D54-B8D6-D7A06E6FB038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E77019-F072-4D54-B8D6-D7A06E6FB038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E77019-F072-4D54-B8D6-D7A06E6FB038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{777DBBEA-8200-47ED-8C9A-288678AAC14A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{777DBBEA-8200-47ED-8C9A-288678AAC14A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{777DBBEA-8200-47ED-8C9A-288678AAC14A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{777DBBEA-8200-47ED-8C9A-288678AAC14A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D7503CA-3957-4BA1-9C95-5D155208634E}
+	EndGlobalSection
+EndGlobal
