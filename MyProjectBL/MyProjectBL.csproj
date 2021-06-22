@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Handlers\CommandHandlers\" />
+    <Folder Include="Handlers\QueryHandlers\" />
+    <Folder Include="RequestModels\" />
+    <Folder Include="ResponseModels\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Interfaces\IQueryHandlers\" />
+    <Folder Include="Interfaces\ICommandHandlers\" />
+    <Folder Include="RequestModels\Products\" />
+    <Folder Include="ResponseModels\Products\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyProjectDL\MyProjectDL.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+</Project>

@@ -4,7 +4,7 @@ using MediatR;
 
 namespace MyProjectBL.RequestModels
 {
-    public class GetProductRequestModel : IRequest<GetProductResponseModel>
+    public class GetProductsRequestModel : IRequest<GetProductsResponseModel>
     {
         public int Id { get; set; }
     }

@@ -4,8 +4,8 @@ using MyProjectBL.Models;
 
 namespace MyProjectBL.ResponseModels
 {
-    public class GetProductResponseModel
+    public class GetProductsResponseModel
     {
-        public ProductModel Product { get; set; }
+        public List<ProductModel> Products { get; set; } = new List<ProductModel>();
     }
 }
