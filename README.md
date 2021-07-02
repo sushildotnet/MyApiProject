@@ -3,8 +3,8 @@ It is a web api project built on below technologies:
 
 Technologies used:
  ### .net core 3.1
- ### CQRS & Mediator pattern
- ### MediatR
+ ### CQRS & Mediator pattern (MediatR)
+ ### JWT token based authentication and authorization
  ### Entity Framework Core
  ### Entity Framework Core In-memory Database
  ### Swagger
@@ -18,14 +18,18 @@ Data is seeded in memory when application starts.
 APIs can be tested using swagger in browser on below URL:
 ### https://localhost:5001/index.html
 
-Feel free to test on postman if you like so.(No authentication/Authorization to make testing easy for you .. TBD).
+Feel free to test on postman if you like so. You might need JWT bearer tokens to call some of the APIs.
 
 Below APIs are implemented
-####  https://localhost:5001/product => GET
-####  https://localhost:5001/product/1 => GET
-####  https://localhost:5001/product/save => POST
-####  https://localhost:5001/product/update => POST
-####  https://localhost:5001/product/delete => POST
+
+  https://localhost:5001/User/authenticate => POST - input schema: {"username":"admin","password": "admin"}
+  https://localhost:5001/user => GET - Authorization Required
+  
+  https://localhost:5001/product => GET
+  https://localhost:5001/product/1 => GET
+  https://localhost:5001/product/save => POST - Authorization Required
+  https://localhost:5001/product/update => POST - Authorization Required
+  https://localhost:5001/product/delete => POST - Authorization Required
 
     Product Schema for testing:
     {
