@@ -9,7 +9,7 @@ Technologies used:
 # Entity Framework Core Inmemory Database
 # Swagger
 
-Data is seeded inmemory when application starts.
+Data is seeded in memory when application starts.
 
 only 2 below: APIs implemented
 # https://localhost:5001/product

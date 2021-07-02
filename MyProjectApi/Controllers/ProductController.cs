@@ -8,6 +8,7 @@ using MyProjectBL.ResponseModels;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MyProjectApi.Controllers
 {
@@ -41,6 +42,7 @@ namespace MyProjectApi.Controllers
 
         [HttpPost]
         [Route("[action]")]
+        [Authorize(Roles = Role.Admin+","+ Role.User)]
         public async Task<ProductModel> Save(ProductModel product)
         {
             var response = await _mediator.Send(new SaveProductRequestModel() { Product = product });
@@ -55,6 +57,7 @@ namespace MyProjectApi.Controllers
 
         [HttpPost]
         [Route("[action]")]
+        [Authorize(Roles = Role.Admin+","+ Role.User)]
         public async Task<ProductModel> Update(ProductModel product)
         {
             var response = await _mediator.Send(new UpdateProductRequestModel() { Product = product });
@@ -69,6 +72,7 @@ namespace MyProjectApi.Controllers
 
         [HttpPost]
         [Route("[action]")]
+        [Authorize(Roles = Role.Admin)]
         public async Task<bool> Delete(int id)
         {
             var response = await _mediator.Send(new DeleteProductRequestModel() { Id = id });

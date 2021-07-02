@@ -13,12 +13,9 @@ namespace MyProjectDL
             using (var context = new MyProjectDbContext(
                 serviceProvider.GetRequiredService<DbContextOptions<MyProjectDbContext>>()))
             {
-                if (context.Products.Any())
+                if (!context.Products.Any())
                 {
-                    return;   // Data was already seeded
-                }
-
-                context.Products.AddRange(
+                    context.Products.AddRange(
                     new Product
                     {
                         Id = 1,
@@ -33,7 +30,39 @@ namespace MyProjectDL
                         Description = "Samsung S 12 2021",
                         Price = 900
                     });
-
+                }
+                //seed users
+                if (!context.Users.Any())
+                {
+                    context.Users.AddRange(
+                        new User
+                        {
+                            Id = 1,
+                            FirstName = "test",
+                            LastName = "test",
+                            Username = "test",
+                            Password = "test",
+                            IsAdmin = false
+                        },
+                        new User
+                        {
+                            Id = 2,
+                            FirstName = "test1",
+                            LastName = "test1",
+                            Username = "test1",
+                            Password = "test1",
+                            IsAdmin = false
+                        },
+                        new User
+                        {
+                            Id = 3,
+                            FirstName = "admin",
+                            LastName = "admin",
+                            Username = "admin",
+                            Password = "admin",
+                            IsAdmin = true
+                        });
+                }
                 context.SaveChanges();
             }
         }
