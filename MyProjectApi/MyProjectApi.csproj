@@ -9,6 +9,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
     <PackageReference Include="MediatR" Version="9.0.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.11.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.16" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyProjectDL\MyProjectDL.csproj">
@@ -17,5 +19,9 @@
     <ProjectReference Include="..\MyProjectBL\MyProjectBL.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="System.IdentityModel.Tokens.Jwt" />
+    <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
   </ItemGroup>
 </Project>

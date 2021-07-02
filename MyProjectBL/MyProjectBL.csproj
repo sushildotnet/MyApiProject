@@ -16,6 +16,8 @@
     <Folder Include="Interfaces\ICommandHandlers\" />
     <Folder Include="RequestModels\Products\" />
     <Folder Include="ResponseModels\Products\" />
+    <Folder Include="Handlers\QueryHandlers\Users\" />
+    <Folder Include="Handlers\QueryHandlers\Products\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyProjectDL\MyProjectDL.csproj" />
@@ -23,5 +25,11 @@
   <ItemGroup>
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
     <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.11.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Handlers\QueryHandlers\Users\" />
+    <None Remove="Handlers\QueryHandlers\Products\" />
+    <None Remove="System.IdentityModel.Tokens.Jwt" />
   </ItemGroup>
 </Project>
