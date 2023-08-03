@@ -2,7 +2,7 @@
 It is a web api project built on below technologies:
 
 Technologies used:
- ##### .net core 3.1
+ ##### .net 7
  ##### CQRS & Mediator pattern (MediatR)
  ##### JWT token based authentication and authorization
  ##### Entity Framework Core
