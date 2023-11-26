@@ -38,7 +38,7 @@ namespace MyProjectApi
         {
             services.AddControllers();
             services.AddSwaggerGen();
-            services.AddMediatR(Assembly.GetAssembly(typeof(ProductModel)));
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
 
             // configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSettings");
